@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title> Calculadora de Años de Perro y Humanos</title>
+        <script>
+        window.onload=function()
+        {
+           document.getElementById('btnCalc').addEventListener('click', calculara);  
+        }
+           function calculara(e)
+            {
+             var anos = document.getElementById('anos').value;
+            var anosp = document.getElementById('anosp').value;   
+                anos=anos*7;
+                anosp=anosp*7;
+                
+                var resultado = "En años de perro, tu perro tiene: "+anos;
+                var result = "En años perro, tu tienes: "+anosp;
+               
+                document.getElementById('resultado').innerHTML=resultado;
+                document.getElementById('result').innerHTML=result;
+            }
+         
+        
+            
+          
+            
+        </script>
+ 
+        
+        
+    </head>
+    <body>
+        <script type="text/javascript" src="cordova.js"></script>
+        <h1> Calculadora de Años de Perro</h1>
+        <label for="anos">Calcule la edad en años caninos según la edad en años humanos digitados </label>
+        <input id="anos" type="number" />
+        <label for="anosp">Calcule la edad en años humanos según la edad en años caninos digitados</label>
+        <input id="anosp" type="number" />
+        <button id="btnCalc"> Calcular</button>
+        <div id="resultado"></div>
+        <div id="result"> </div>
+
+        
+                              
+        
+        
+            
+    </body>
+</html>
+
